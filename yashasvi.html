@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yashasvi's Portfolio | Nestling Nippers</title>
+<meta name="description" content="Meet Yashasvi — a little Nipper's journey, milestones and favourite moments at Nestling Nippers.">
+<link rel="icon" type="image/png" href="logo.png">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Shared site design system (fonts, colours, header/nav/footer, buttons).
+     This is the ONLY thing this page borrows from the main site —
+     everything specific to Yashasvi's portfolio is styled below,
+     inside this file, so the master stylesheet never needs editing
+     when a new child's page is added. -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ============================================================
+     PAGE-ONLY STYLES — safe to copy this whole file for the next
+     child; nothing here is shared, nothing here can break another
+     page.
+     ============================================================ -->
+<style>
+  .profile-hero{
+    position:relative; overflow:hidden; padding:56px 0 44px;
+    background:
+      radial-gradient(circle at 88% 14%, var(--sun-tint) 0%, transparent 45%),
+      radial-gradient(circle at 6% 96%, var(--sky-tint) 0%, transparent 42%),
+      var(--cream);
+  }
+  .profile-hero-inner{
+    display:flex; gap:36px; align-items:center; flex-wrap:wrap;
+  }
+  .profile-photo{
+    width:170px; height:170px; border-radius:50%; flex-shrink:0;
+    border:6px solid var(--white); box-shadow:var(--shadow-soft);
+  }
+  .profile-photo img{ width:100%; height:100%; object-fit:cover; border-radius:50%; }
+  .profile-info{ flex:1 1 320px; min-width:260px; }
+  .profile-info h1{ font-size:clamp(2rem,4vw,2.8rem); margin-bottom:4px; }
+  .profile-meta{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+  .profile-meta .pill{ background:var(--white); }
+  .profile-quote{
+    margin-top:16px; font-family:var(--font-script); font-size:1.15rem;
+    color:var(--ink-soft); max-width:480px;
+  }
+
+  .fact-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  .fact-chip{
+    background:var(--white); border-radius:22px; padding:22px 18px; text-align:center; box-shadow:var(--shadow-card);
+  }
+  .fact-chip .fc-emoji{ font-size:1.8rem; margin-bottom:8px; display:block; }
+  .fact-chip h4{ font-size:.78rem; text-transform:uppercase; letter-spacing:.5px; color:var(--ink-faint); margin-bottom:4px; }
+  .fact-chip p{ font-family:var(--font-display); font-weight:600; font-size:1.05rem; margin:0; color:var(--ink); }
+  @media (max-width:820px){ .fact-grid{ grid-template-columns:repeat(2,1fr); } }
+
+  .photo-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .photo-grid .ph-item{ aspect-ratio:1; border-radius:20px; overflow:hidden; box-shadow:var(--shadow-card); }
+  @media (max-width:820px){ .photo-grid{ grid-template-columns:repeat(2,1fr); } }
+
+  .badge-strip{ display:flex; flex-wrap:wrap; gap:14px; }
+  .badge-item{
+    display:flex; align-items:center; gap:10px; background:var(--white); border-radius:100px;
+    padding:10px 18px 10px 10px; box-shadow:var(--shadow-card);
+  }
+  .badge-item .bi-icon{
+    width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.1rem; color:var(--white);
+  }
+  .badge-item span{ font-family:var(--font-display); font-weight:600; font-size:.9rem; color:var(--ink); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="logo.png" class="logo-mark" alt="Nestling Nippers — Vanasthali Public School">
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="campus-life.html">Campus Life</a></li>
+        <li><a href="gallery.html">Gallery &amp; Achievers</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="parents.html">Parents' Corner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= PROFILE HERO ================= -->
+<section class="profile-hero">
+  <div class="container profile-hero-inner">
+    <div class="profile-photo skel">
+      <img src="yashasvi.jpg" alt="Placeholder photo — replace with Yashasvi's photo" loading="eager">
+    </div>
+    <div class="profile-info">
+      <span class="eyebrow">A little Nipper's story</span>
+      <h1>Yashasvi</h1>
+      <div class="profile-meta">
+        <span class="pill">Nursery-A</span>
+        <span class="pill">Admn. No. NN-2026-014</span>
+        <span class="pill">Joined April 2026</span>
+      </div>
+      <p class="profile-quote">"Give me a paintbrush and a rainy afternoon, and I'll show you a masterpiece!"</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUICK FACTS ================= -->
+<section style="padding-top:20px;">
+  <div class="container">
+    <div class="section-head align-left reveal">
+      <span class="eyebrow">Getting to know Yashasvi</span>
+      <h2>A few favourite things</h2>
+    </div>
+    <div class="fact-grid reveal">
+      <div class="fact-chip"><span class="fc-emoji">🎨</span><h4>Favourite Activity</h4><p>Painting &amp; craft</p></div>
+      <div class="fact-chip"><span class="fc-emoji">📚</span><h4>Favourite Story</h4><p>The Hungry Caterpillar</p></div>
+      <div class="fact-chip"><span class="fc-emoji">🧡</span><h4>Favourite Colour</h4><p>Orange</p></div>
+      <div class="fact-chip"><span class="fc-emoji">🌟</span><h4>Dreams of Becoming</h4><p>A doctor</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head align-left reveal">
+      <span class="eyebrow">Moments &amp; milestones</span>
+      <h2>Yashasvi's Gallery</h2>
+      <p>A little window into her days at Nestling Nippers — sample photos below; replace with her real ones.</p>
+    </div>
+    <div class="photo-grid reveal">
+      <div class="ph-item skel"><img src="https://picsum.photos/seed/vps-y1/500/500" alt="Placeholder photo 1" loading="lazy"></div>
+      <div class="ph-item skel"><img src="https://picsum.photos/seed/vps-y2/500/500" alt="Placeholder photo 2" loading="lazy"></div>
+      <div class="ph-item skel"><img src="https://picsum.photos/seed/vps-y3/500/500" alt="Placeholder photo 3" loading="lazy"></div>
+      <div class="ph-item skel"><img src="https://picsum.photos/seed/vps-y4/500/500" alt="Placeholder photo 4" loading="lazy"></div>
+      <div class="ph-item skel"><img src="https://picsum.photos/seed/vps-y5/500/500" alt="Placeholder photo 5" loading="lazy"></div>
+      <div class="ph-item skel"><img src="https://picsum.photos/seed/vps-y6/500/500" alt="Placeholder photo 6" loading="lazy"></div>
+      <div class="ph-item skel"><img src="https://picsum.photos/seed/vps-y7/500/500" alt="Placeholder photo 7" loading="lazy"></div>
+      <div class="ph-item skel"><img src="https://picsum.photos/seed/vps-y8/500/500" alt="Placeholder photo 8" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEACHER'S NOTE ================= -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">In her teacher's words</span>
+      <h2>Teacher's Note</h2>
+    </div>
+    <div class="message-card reveal">
+      <div class="portrait skel">
+        <img src="https://picsum.photos/seed/vps-teacher-nur-a/300/300" alt="Placeholder photo — Nursery-A class teacher" loading="lazy">
+      </div>
+      <div>
+        <span class="quote-mark">“</span>
+        <span class="role">Nursery-A Class Teacher</span>
+        <h3>Ms. Priya Sharma</h3>
+        <p>Yashasvi lights up circle time with her questions — she's always curious about how things work and isn't shy about asking "why?" one more time. She shares her crayons without being asked and has become the friend who checks in when someone looks sad.</p>
+        <p>This term she's grown so much more confident with her letters and loves helping tidy up the reading corner. We're proud of the kind, curious little person she's becoming.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section class="section-tint-sun">
+  <div class="container">
+    <div class="section-head align-left reveal">
+      <span class="eyebrow">Little wins, celebrated</span>
+      <h2>Badges &amp; Milestones</h2>
+    </div>
+    <div class="badge-strip reveal">
+      <div class="badge-item"><span class="bi-icon" style="background:var(--coral);">⭐</span><span>Star of the Week — June</span></div>
+      <div class="badge-item"><span class="bi-icon" style="background:var(--sky);">🎨</span><span>Best Craft — Art Fest</span></div>
+      <div class="badge-item"><span class="bi-icon" style="background:var(--sun);">🗣️</span><span>Confident Speaker</span></div>
+      <div class="badge-item"><span class="bi-icon" style="background:var(--leaf);">🤝</span><span>Kindness Champion</span></div>
+      <div class="badge-item"><span class="bi-icon" style="background:var(--plum);">📖</span><span>100 Books Milestone</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BACK LINK ================= -->
+<section style="padding-top:0;">
+  <div class="container text-center reveal">
+    <a href="index.html" class="btn btn-outline">← Back to Home</a>
+  </div>
+</section>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="logo-mark-chip"><img src="logo.png" class="logo-mark" alt="Nestling Nippers — Vanasthali Public School"></span>
+        </div>
+        <p class="foot-desc">The pre-primary wing of Vanasthali Public School — nurturing Playgroup to Grade II with warmth, structure and joy.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+          <a href="https://vanasthalischool.in" target="_blank" rel="noopener" aria-label="Website">🌐</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="campus-life.html">Campus Life</a></li>
+          <li><a href="gallery.html">Gallery &amp; Achievers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>For Parents</h4>
+        <ul>
+          <li><a href="admissions.html">Admissions &amp; Fees</a></li>
+          <li><a href="parents.html">Guidelines</a></li>
+          <li><a href="parents.html#transport">Transport</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li>Sector 3, Vasundhara, Ghaziabad, UP 201012</li>
+          <li>0120-4111061 / 62</li>
+          <li>vpsvasundhara@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find Us</h4>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.843307976024!2d77.38362382537093!3d28.66441002564738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf073104068f9%3A0x43183137aa753761!2sVANASTHALI%20PUBLIC%20SCHOOL%2C%20Sector%203%2C%20Vasundhara%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201012!5e0!3m2!1sen!2sin!4v1787373208218!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Vanasthali Public School location"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="year-now">2026</span> Vanasthali Public School — Nestling Nippers. All rights reserved.</span>
+      <span>Session 2026–27</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Shared site behaviour: nav toggle, skeleton loaders, reveal-on-scroll, back-to-top -->
+<script src="js/script.js"></script>
+</body>
+</html>
