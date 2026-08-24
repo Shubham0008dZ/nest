@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nitya's Nipper Passport | Nestling Nippers</title>
+<meta name="description" content="Meet Nitya — stamped, sealed and delivered as an official Nestling Nippers passport.">
+<link rel="icon" type="image/png" href="logo.png">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ============================================================
+     PASSPORT / ID CARD THEME — unique to Nitya's page.
+     ============================================================ -->
+<style>
+  .nt-hero{ padding:56px 0; background:var(--leaf-tint); }
+  .nt-passport{
+    max-width:640px; margin:0 auto; background:var(--white); border-radius:14px; overflow:hidden;
+    box-shadow:var(--shadow-soft); border:3px solid var(--ink);
+  }
+  .nt-passport-head{
+    background:var(--ink); color:var(--cream); padding:14px 22px; display:flex; justify-content:space-between; align-items:center;
+    font-family:var(--font-display); font-weight:700; letter-spacing:1px; text-transform:uppercase; font-size:.85rem;
+  }
+  .nt-passport-body{ display:flex; gap:22px; padding:26px; flex-wrap:wrap; }
+  .nt-photo{ width:130px; height:160px; border:3px solid var(--ink); flex-shrink:0; }
+  .nt-photo img{ width:100%; height:100%; object-fit:cover; }
+  .nt-passport-fields{ flex:1; min-width:220px; }
+  .nt-passport-fields dt{ font-size:.7rem; text-transform:uppercase; letter-spacing:.5px; color:var(--ink-faint); margin-top:8px; }
+  .nt-passport-fields dt:first-child{ margin-top:0; }
+  .nt-passport-fields dd{ margin:0; font-family:var(--font-display); font-weight:700; font-size:1.1rem; }
+
+  .nt-stamps{ display:flex; flex-wrap:wrap; gap:18px; justify-content:center; }
+  .nt-stamp{
+    width:120px; height:120px; border:3px dashed var(--coral); border-radius:50%; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; text-align:center; transform:rotate(-8deg); color:var(--coral-deep);
+    font-family:var(--font-display); font-weight:700; font-size:.78rem; padding:8px;
+  }
+  .nt-stamp:nth-child(2n){ transform:rotate(6deg); border-color:var(--sky); color:var(--sky); }
+  .nt-stamp:nth-child(3n){ transform:rotate(-3deg); border-color:var(--leaf); color:#3f7a3d; }
+  .nt-stamp .nt-stamp-icon{ font-size:1.6rem; margin-bottom:4px; }
+
+  .nt-visa-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .nt-visa-grid .nt-visa-photo{ aspect-ratio:3/4; border:2px solid var(--ink); overflow:hidden; }
+  @media (max-width:600px){ .nt-visa-grid{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><img src="logo.png" class="logo-mark" alt="Nestling Nippers — Vanasthali Public School"></a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="campus-life.html">Campus Life</a></li>
+        <li><a href="gallery.html">Gallery &amp; Achievers</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="parents.html">Parents' Corner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ================= PASSPORT CARD ================= -->
+<section class="nt-hero">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Official Document</span>
+      <h2>Nitya's Nestling Nippers Passport</h2>
+    </div>
+    <div class="nt-passport reveal">
+      <div class="nt-passport-head"><span>Republic of Nestling Nippers</span><span>Nursery-B</span></div>
+      <div class="nt-passport-body">
+        <div class="nt-photo skel"><img src="https://picsum.photos/seed/vps-nitya/260/320" alt="Placeholder photo — replace with Nitya's photo" loading="eager"></div>
+        <dl class="nt-passport-fields">
+          <dt>Full Name</dt><dd>Nitya</dd>
+          <dt>Admission No.</dt><dd>NN-2026-088</dd>
+          <dt>Issued</dt><dd>April 2026</dd>
+          <dt>Favourite Destination</dt><dd>The Sand Play Pit</dd>
+          <dt>Known For</dt><dd>Sharing snacks without being asked</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STAMPS / ACHIEVEMENTS ================= -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Stamped &amp; approved</span>
+      <h2>Achievement Stamps</h2>
+    </div>
+    <div class="nt-stamps reveal">
+      <div class="nt-stamp"><span class="nt-stamp-icon">🎨</span>Best Colouring</div>
+      <div class="nt-stamp"><span class="nt-stamp-icon">🤝</span>Kindness Visa</div>
+      <div class="nt-stamp"><span class="nt-stamp-icon">📖</span>Story Time Star</div>
+      <div class="nt-stamp"><span class="nt-stamp-icon">🧼</span>Tidy Desk Award</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISA PHOTOS ================= -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head align-left reveal">
+      <span class="eyebrow">Travel photos</span>
+      <h2>Stamped Memories</h2>
+    </div>
+    <div class="nt-visa-grid reveal">
+      <div class="nt-visa-photo skel"><img src="https://picsum.photos/seed/vps-nt1/300/400" alt="Placeholder photo 1" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="nt-visa-photo skel"><img src="https://picsum.photos/seed/vps-nt2/300/400" alt="Placeholder photo 2" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="nt-visa-photo skel"><img src="https://picsum.photos/seed/vps-nt3/300/400" alt="Placeholder photo 3" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="nt-visa-photo skel"><img src="https://picsum.photos/seed/vps-nt4/300/400" alt="Placeholder photo 4" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEACHER NOTE ================= -->
+<section>
+  <div class="container">
+    <div class="message-card reveal">
+      <div class="portrait skel"><img src="Yashasvi.jpg" alt="Placeholder photo — Nursery-B teacher" loading="lazy"></div>
+      <div>
+        <span class="quote-mark">“</span>
+        <span class="role">Nursery-B Class Teacher</span>
+        <h3>Mr. Devansh Nath</h3>
+        <p>Nitya has an old soul — calm, observant, and quietly kind. She's the one who notices a friend sitting alone and simply walks over without a word. Her drawings this term have gotten wonderfully detailed too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container text-center reveal"><a href="index.html" class="btn btn-outline">← Back to Home</a></div>
+</section>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><span class="logo-mark-chip"><img src="logo.png" class="logo-mark" alt="Nestling Nippers — Vanasthali Public School"></span></div>
+        <p class="foot-desc">The pre-primary wing of Vanasthali Public School — nurturing Playgroup to Grade II with warmth, structure and joy.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+          <a href="https://vanasthalischool.in" target="_blank" rel="noopener" aria-label="Website">🌐</a>
+        </div>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="academics.html">Academics</a></li><li><a href="campus-life.html">Campus Life</a></li><li><a href="gallery.html">Gallery &amp; Achievers</a></li></ul></div>
+      <div><h4>For Parents</h4><ul><li><a href="admissions.html">Admissions &amp; Fees</a></li><li><a href="parents.html">Guidelines</a></li><li><a href="parents.html#transport">Transport</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h4>Reach us</h4><ul><li>Sector 3, Vasundhara, Ghaziabad, UP 201012</li><li>0120-4111061 / 62</li><li>vpsvasundhara@gmail.com</li></ul></div>
+      <div>
+        <h4>Find Us</h4>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.843307976024!2d77.38362382537093!3d28.66441002564738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf073104068f9%3A0x43183137aa753761!2sVANASTHALI%20PUBLIC%20SCHOOL%2C%20Sector%203%2C%20Vasundhara%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201012!5e0!3m2!1sen!2sin!4v1787373208218!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Vanasthali Public School location"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span class="year-now">2026</span> Vanasthali Public School — Nestling Nippers. All rights reserved.</span><span>Session 2026–27</span></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna's Portfolio | Nestling Nippers</title>
+<meta name="description" content="Meet Krishna — a little Nipper's journey at Nestling Nippers.">
+<link rel="icon" type="image/png" href="logo.png">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ============================================================
+     JOURNEY TIMELINE THEME — unique to Krishna's page.
+     ============================================================ -->
+<style>
+  .kr-hero{
+    padding:64px 0 50px; text-align:center;
+    background:linear-gradient(180deg,var(--sky-tint) 0%, var(--cream) 100%);
+  }
+  .kr-photo{
+    width:150px; height:150px; border-radius:50%; margin:0 auto 18px;
+    border:5px solid var(--white); box-shadow:var(--shadow-soft);
+  }
+  .kr-photo img{ width:100%; height:100%; object-fit:cover; border-radius:50%; }
+  .kr-hero h1{ font-size:clamp(2rem,4vw,2.8rem); }
+  .kr-hero .pill{ background:var(--white); margin:0 4px; }
+
+  .kr-path{ position:relative; max-width:720px; margin:0 auto; padding:20px 0; }
+  .kr-path::before{
+    content:''; position:absolute; left:24px; top:0; bottom:0; width:4px;
+    background:repeating-linear-gradient(var(--sky) 0 10px, transparent 10px 20px);
+    border-radius:4px;
+  }
+  .kr-step{ position:relative; padding-left:70px; margin-bottom:38px; }
+  .kr-step:last-child{ margin-bottom:0; }
+  .kr-dot{
+    position:absolute; left:0; top:0; width:50px; height:50px; border-radius:50%;
+    background:var(--sky); color:var(--white); display:flex; align-items:center; justify-content:center;
+    font-size:1.3rem; box-shadow:var(--shadow-card);
+  }
+  .kr-step h3{ margin-bottom:4px; }
+  .kr-step p{ color:var(--ink-soft); margin:0; }
+  .kr-step span.kr-when{ font-family:var(--font-script); color:var(--coral-deep); font-size:1.05rem; }
+
+  .kr-snap-strip{ display:flex; gap:14px; overflow-x:auto; padding:6px 4px 16px; }
+  .kr-snap{ flex:0 0 140px; aspect-ratio:1; border-radius:16px; overflow:hidden; box-shadow:var(--shadow-card); }
+
+  .kr-teacher{
+    background:var(--sky-tint); border-radius:28px; padding:32px; max-width:640px; margin:0 auto;
+    text-align:center;
+  }
+  .kr-teacher .quote-mark{ font-family:var(--font-script); font-size:2.6rem; color:var(--sky); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><img src="logo.png" class="logo-mark" alt="Nestling Nippers — Vanasthali Public School"></a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="campus-life.html">Campus Life</a></li>
+        <li><a href="gallery.html">Gallery &amp; Achievers</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="parents.html">Parents' Corner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="kr-hero">
+  <div class="container">
+    <div class="kr-photo skel">
+      <img src="https://picsum.photos/seed/vps-krishna/300/300" alt="Placeholder photo — replace with Krishna's photo" loading="eager">
+    </div>
+    <span class="eyebrow">A little Nipper's journey</span>
+    <h1>Krishna</h1>
+    <div>
+      <span class="pill">LKG-B</span>
+      <span class="pill">Admn. No. NN-2026-031</span>
+      <span class="pill">Joined April 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY PATH ================= -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Step by step</span>
+      <h2>Krishna's Journey So Far</h2>
+    </div>
+    <div class="kr-path reveal">
+      <div class="kr-step">
+        <div class="kr-dot">🎈</div>
+        <span class="kr-when">April 2026</span>
+        <h3>First Day at Nestling Nippers</h3>
+        <p>Walked in holding Papa's hand, walked out holding a new friend's hand instead.</p>
+      </div>
+      <div class="kr-step">
+        <div class="kr-dot">✏️</div>
+        <span class="kr-when">June 2026</span>
+        <h3>Wrote His Name for the First Time</h3>
+        <p>Three wobbly letters and the biggest smile you've ever seen.</p>
+      </div>
+      <div class="kr-step">
+        <div class="kr-dot">🚌</div>
+        <span class="kr-when">August 2026</span>
+        <h3>A Day in My Child's Shoes</h3>
+        <p>Led his whole class on a pretend "school bus" made of chairs during circle time.</p>
+      </div>
+      <div class="kr-step">
+        <div class="kr-dot">🌟</div>
+        <span class="kr-when">Today</span>
+        <h3>Growing Every Day</h3>
+        <p>Now counts to 20, knows all his colours, and still insists on doing his shoelaces himself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SNAPSHOTS ================= -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head align-left reveal">
+      <span class="eyebrow">Along the way</span>
+      <h2>Snapshots</h2>
+    </div>
+    <div class="kr-snap-strip reveal">
+      <div class="kr-snap skel"><img src="https://picsum.photos/seed/vps-kr1/300/300" alt="Placeholder snapshot 1" loading="lazy"></div>
+      <div class="kr-snap skel"><img src="https://picsum.photos/seed/vps-kr2/300/300" alt="Placeholder snapshot 2" loading="lazy"></div>
+      <div class="kr-snap skel"><img src="https://picsum.photos/seed/vps-kr3/300/300" alt="Placeholder snapshot 3" loading="lazy"></div>
+      <div class="kr-snap skel"><img src="https://picsum.photos/seed/vps-kr4/300/300" alt="Placeholder snapshot 4" loading="lazy"></div>
+      <div class="kr-snap skel"><img src="https://picsum.photos/seed/vps-kr5/300/300" alt="Placeholder snapshot 5" loading="lazy"></div>
+      <div class="kr-snap skel"><img src="https://picsum.photos/seed/vps-kr6/300/300" alt="Placeholder snapshot 6" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEACHER NOTE ================= -->
+<section>
+  <div class="container">
+    <div class="kr-teacher reveal">
+      <span class="quote-mark">“</span>
+      <p style="font-size:1.1rem; color:var(--ink);">Krishna asks the best questions in class — the kind that make me stop and think too. He's patient with younger kids in the playground and never leaves anyone out of a game.</p>
+      <p style="font-weight:600; color:var(--sky); margin:0;">— Ms. Kavita Rawat, LKG-B Class Teacher</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container text-center reveal"><a href="index.html" class="btn btn-outline">← Back to Home</a></div>
+</section>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><span class="logo-mark-chip"><img src="logo.png" class="logo-mark" alt="Nestling Nippers — Vanasthali Public School"></span></div>
+        <p class="foot-desc">The pre-primary wing of Vanasthali Public School — nurturing Playgroup to Grade II with warmth, structure and joy.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+          <a href="https://vanasthalischool.in" target="_blank" rel="noopener" aria-label="Website">🌐</a>
+        </div>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="academics.html">Academics</a></li><li><a href="campus-life.html">Campus Life</a></li><li><a href="gallery.html">Gallery &amp; Achievers</a></li></ul></div>
+      <div><h4>For Parents</h4><ul><li><a href="admissions.html">Admissions &amp; Fees</a></li><li><a href="parents.html">Guidelines</a></li><li><a href="parents.html#transport">Transport</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h4>Reach us</h4><ul><li>Sector 3, Vasundhara, Ghaziabad, UP 201012</li><li>0120-4111061 / 62</li><li>vpsvasundhara@gmail.com</li></ul></div>
+      <div>
+        <h4>Find Us</h4>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.843307976024!2d77.38362382537093!3d28.66441002564738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf073104068f9%3A0x43183137aa753761!2sVANASTHALI%20PUBLIC%20SCHOOL%2C%20Sector%203%2C%20Vasundhara%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201012!5e0!3m2!1sen!2sin!4v1787373208218!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Vanasthali Public School location"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span class="year-now">2026</span> Vanasthali Public School — Nestling Nippers. All rights reserved.</span><span>Session 2026–27</span></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

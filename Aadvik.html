@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadvik's Scrapbook | Nestling Nippers</title>
+<meta name="description" content="Meet Aadvik — a playful scrapbook of moments at Nestling Nippers.">
+<link rel="icon" type="image/png" href="logo.png">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ============================================================
+     COMIC SCRAPBOOK THEME — unique to Aadvik's page.
+     ============================================================ -->
+<style>
+  .av-hero{
+    padding:56px 0 70px; position:relative; overflow:hidden;
+    background:var(--sun-tint);
+    background-image:
+      radial-gradient(circle, rgba(31,58,61,.08) 2px, transparent 2.4px);
+    background-size:22px 22px;
+  }
+  .av-hero-inner{ display:flex; gap:40px; align-items:center; flex-wrap:wrap; justify-content:center; }
+  .av-polaroid{
+    background:var(--white); padding:14px 14px 44px; border-radius:6px; box-shadow:var(--shadow-soft);
+    transform:rotate(-6deg); width:220px; flex-shrink:0; position:relative;
+  }
+  .av-polaroid img{ width:100%; aspect-ratio:1; object-fit:cover; border-radius:2px; }
+  .av-polaroid::after{
+    content:'Aadvik ✏️'; position:absolute; bottom:12px; left:0; right:0; text-align:center;
+    font-family:var(--font-script); font-size:1.2rem; color:var(--ink-soft);
+  }
+  .av-hero-text{ max-width:420px; }
+  .av-hero-text h1{ font-size:clamp(2.2rem,4.5vw,3.2rem); transform:rotate(-1deg); }
+  .av-tape{
+    position:absolute; width:70px; height:26px; background:rgba(244,185,66,.55);
+    top:-10px; left:50%; transform:translateX(-50%) rotate(-3deg);
+  }
+
+  .av-bubbles{ display:flex; flex-wrap:wrap; gap:22px; justify-content:center; }
+  .av-bubble{
+    background:var(--white); border-radius:24px; padding:18px 22px; max-width:220px; position:relative;
+    box-shadow:var(--shadow-card); font-family:var(--font-display); font-weight:600; text-align:center;
+  }
+  .av-bubble::after{
+    content:''; position:absolute; bottom:-14px; left:36px; border:14px solid transparent; border-top-color:var(--white);
+  }
+  .av-bubble:nth-child(2n){ transform:rotate(2deg); }
+  .av-bubble:nth-child(3n){ transform:rotate(-2deg); }
+  .av-bubble .av-emoji{ font-size:1.8rem; display:block; margin-bottom:6px; }
+
+  .av-strip{ display:grid; grid-template-columns:repeat(4,1fr); gap:26px; }
+  .av-strip .av-polaroid{ width:100%; padding-bottom:36px; }
+  .av-strip .av-polaroid:nth-child(odd){ transform:rotate(4deg); }
+  .av-strip .av-polaroid:nth-child(even){ transform:rotate(-4deg); }
+  .av-strip .av-polaroid::after{ content:''; }
+  @media (max-width:820px){ .av-strip{ grid-template-columns:repeat(2,1fr); } }
+
+  .av-burst{
+    display:inline-flex; align-items:center; gap:8px; background:var(--coral); color:var(--white);
+    padding:12px 22px; border-radius:100px; font-family:var(--font-display); font-weight:700;
+    transform:rotate(-3deg); box-shadow:var(--shadow-card); margin:6px;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><img src="logo.png" class="logo-mark" alt="Nestling Nippers — Vanasthali Public School"></a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="campus-life.html">Campus Life</a></li>
+        <li><a href="gallery.html">Gallery &amp; Achievers</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="parents.html">Parents' Corner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="av-hero">
+  <div class="container av-hero-inner">
+    <div class="av-polaroid skel">
+      <span class="av-tape"></span>
+      <img src="https://picsum.photos/seed/vps-aadvik/400/400" alt="Placeholder photo — replace with Aadvik's photo" loading="eager">
+    </div>
+    <div class="av-hero-text">
+      <span class="eyebrow">Aadvik's Scrapbook</span>
+      <h1>Hi, I'm Aadvik!</h1>
+      <p style="color:var(--ink-soft); font-size:1.05rem;">Nursery-B · Admn. No. NN-2026-047 · Joined April 2026</p>
+      <p style="font-family:var(--font-script); font-size:1.3rem; color:var(--coral-deep);">"I made this whole page myself... okay, my teacher helped a little."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPEECH BUBBLE FACTS ================= -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">In his own words</span>
+      <h2>All About Me</h2>
+    </div>
+    <div class="av-bubbles reveal">
+      <div class="av-bubble"><span class="av-emoji">🦖</span>My favourite animal is a dinosaur, obviously.</div>
+      <div class="av-bubble"><span class="av-emoji">🍕</span>I could eat pizza every single day.</div>
+      <div class="av-bubble"><span class="av-emoji">🚀</span>When I grow up I want to fly a rocket.</div>
+      <div class="av-bubble"><span class="av-emoji">🎵</span>I know all the words to three whole songs!</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCRAPBOOK STRIP ================= -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head align-left reveal">
+      <span class="eyebrow">Sticky-taped memories</span>
+      <h2>My Scrapbook Page</h2>
+    </div>
+    <div class="av-strip reveal">
+      <div class="av-polaroid skel"><img src="https://picsum.photos/seed/vps-av1/300/300" alt="Placeholder photo 1" loading="lazy"></div>
+      <div class="av-polaroid skel"><img src="https://picsum.photos/seed/vps-av2/300/300" alt="Placeholder photo 2" loading="lazy"></div>
+      <div class="av-polaroid skel"><img src="https://picsum.photos/seed/vps-av3/300/300" alt="Placeholder photo 3" loading="lazy"></div>
+      <div class="av-polaroid skel"><img src="https://picsum.photos/seed/vps-av4/300/300" alt="Placeholder photo 4" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEACHER + BADGES ================= -->
+<section>
+  <div class="container">
+    <div class="message-card reveal">
+      <div class="portrait skel"><img src="https://picsum.photos/seed/vps-teacher-nur-b/300/300" alt="Placeholder photo — Nursery-B teacher" loading="lazy"></div>
+      <div>
+        <span class="quote-mark">“</span>
+        <span class="role">Nursery-B Class Teacher</span>
+        <h3>Mr. Devansh Nath</h3>
+        <p>Aadvik turns every activity into a story — building blocks become a dinosaur castle, crayons become rocket fuel. His imagination keeps the whole class entertained, and he's always the first to offer a silly joke when someone needs cheering up.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:24px;">
+      <span class="av-burst">🏆 Most Imaginative Storyteller</span>
+      <span class="av-burst" style="background:var(--sky); transform:rotate(2deg);">🎨 Best Dino Drawing</span>
+      <span class="av-burst" style="background:var(--leaf); transform:rotate(-1deg);">😂 Class Joker Award</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container text-center reveal"><a href="index.html" class="btn btn-outline">← Back to Home</a></div>
+</section>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><span class="logo-mark-chip"><img src="logo.png" class="logo-mark" alt="Nestling Nippers — Vanasthali Public School"></span></div>
+        <p class="foot-desc">The pre-primary wing of Vanasthali Public School — nurturing Playgroup to Grade II with warmth, structure and joy.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+          <a href="https://vanasthalischool.in" target="_blank" rel="noopener" aria-label="Website">🌐</a>
+        </div>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="academics.html">Academics</a></li><li><a href="campus-life.html">Campus Life</a></li><li><a href="gallery.html">Gallery &amp; Achievers</a></li></ul></div>
+      <div><h4>For Parents</h4><ul><li><a href="admissions.html">Admissions &amp; Fees</a></li><li><a href="parents.html">Guidelines</a></li><li><a href="parents.html#transport">Transport</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h4>Reach us</h4><ul><li>Sector 3, Vasundhara, Ghaziabad, UP 201012</li><li>0120-4111061 / 62</li><li>vpsvasundhara@gmail.com</li></ul></div>
+      <div>
+        <h4>Find Us</h4>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.843307976024!2d77.38362382537093!3d28.66441002564738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf073104068f9%3A0x43183137aa753761!2sVANASTHALI%20PUBLIC%20SCHOOL%2C%20Sector%203%2C%20Vasundhara%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201012!5e0!3m2!1sen!2sin!4v1787373208218!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Vanasthali Public School location"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span class="year-now">2026</span> Vanasthali Public School — Nestling Nippers. All rights reserved.</span><span>Session 2026–27</span></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
